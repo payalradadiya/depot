@@ -11,8 +11,8 @@ default: &default
 development:
   <<: *default
   database: depot_development
-  username: postgresql
-  password: postgresql
+  username: postgres
+  password: postgres
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,8 +20,8 @@ development:
 test:
   <<: *default
   database: depot_test
-  username: postgresql
-  password: postgresql
+  username: postgres
+  password: postgres
 
 production:
   <<: *default
